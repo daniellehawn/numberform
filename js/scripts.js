@@ -9,6 +9,7 @@ function addNumber () {
   }
   else {
     alert("Numerical entries only please!");
+    document.getElementById("addForm").reset();
   }
   event.preventDefault();
 }
@@ -25,6 +26,7 @@ function updatePage () {
   
   var avg = 0;
   var totalNumbers = numbers.length;
+  
   avg = (sum / totalNumbers);
   document.getElementById("average").innerHTML = avg;
   
@@ -32,11 +34,11 @@ function updatePage () {
 }
 
 function clearForm() {
-document.getElementById("addForm").reset();
-document.getElementById("count").innerHTML = "0";
-document.getElementById("sum").innerHTML = "0";
-document.getElementById("average").innerHTML = "0";
-numbers = [];
-event.preventDefault();
+  document.getElementById("addForm").reset();
+  document.getElementById("count").innerHTML = "0";
+  document.getElementById("sum").innerHTML = "0";
+  document.getElementById("average").innerHTML = "0";
+  numbers = [];
+  event.preventDefault();
 }
 
