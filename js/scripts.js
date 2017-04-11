@@ -38,7 +38,11 @@ function clearForm() {
   document.getElementById("count").innerHTML = "0";
   document.getElementById("sum").innerHTML = "0";
   document.getElementById("average").innerHTML = "0";
-  numbers = [];
+
+  for ( var i = numbers.length; i > 0; i--) {
+    numbers.pop();
+  }
+  
   event.preventDefault();
 }
 
