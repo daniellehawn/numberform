@@ -39,7 +39,7 @@ function clearForm() {
   document.getElementById("sum").innerHTML = "0";
   document.getElementById("average").innerHTML = "0";
 
-  for ( var i = numbers.length; i > 0; i--) {
+  for (var i = numbers.length; i > 0; i--) {
     numbers.pop();
   }
   
